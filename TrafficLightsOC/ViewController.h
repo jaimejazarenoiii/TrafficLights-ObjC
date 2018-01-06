@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSTimer *timer;
+    NSTimer *scoreTimer;
+    
+    int scoreInt;
+    int timerInt;
+    
+}
 
+@property (weak, nonatomic) IBOutlet UIButton *startGameButton;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+- (IBAction)startButton:(id)sender;
 
 @end
 
